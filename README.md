@@ -1,7 +1,7 @@
 Implementing asynchronous queries with the Java driver using ScalaPlay framework, bound results in immutable Scala collections and pass to Play controller in reactive model.
 [Datastax(Asynchronous queries with the Java driver)](http://www.datastax.com/dev/blog/java-driver-async-queries)
 ===================================================================================================================
-* Building Reactive Play application with reactive cassandra driver
+Building Reactive Play application with reactive cassandra driver
 -----------------------------------------------------------------------
 ###Get this application on your computer :-
 -----------------------------------------------------------------------
@@ -14,7 +14,7 @@ Implementing asynchronous queries with the Java driver using ScalaPlay framework
 	* DROP TABLE books;
 	* CREATE TABLE tweets (key text PRIMARY KEY, user_user varchar, text text, createdat timestamp) WITH comment='Books' AND COMPACT STORAGE AND read_repair_chance = 1.0;
 * In case of different port or cluster configuration, you need to change the following configuration in application.conf
-	akka-cassandra {
+	<pre>akka-cassandra {
 	  main {
 	    db {
 	      cassandra {
@@ -25,7 +25,7 @@ Implementing asynchronous queries with the Java driver using ScalaPlay framework
 	      }
 	    }
 	  }
-	}
+	}</pre>
 * Install Typesafe Activator if you do not have it already. You can get it from here: http://www.playframework.com/download
 * Execute `activator clean compile` to build the application
 * Execute `activator run` to execute the application
