@@ -1,0 +1,23 @@
+@* details Template File *@
+@import domain._
+@(book: Book)
+@main(Messages("book.details", book.id.id)) {
+	<h2>
+		@tags.barcode(book.id.id)
+		@Messages("book.details", book.description.description)
+	</h2>
+	<div class="container">
+		<div class="page-header">
+			<dt>@Messages("ean")</dt>
+			<dd>@book.id.id</dd>
+			<dt>@Messages("description")</dt>
+			<dd>@book.description.description</dd>
+			<dt>@Messages("user")</dt>
+			<dd>@book.user.user</dd>
+			<dt>@Messages("publishedat")</dt>
+			<dd>@book.createdAt</dd>
+		</div>
+		<p><a href="@routes.BookController.edit(book.id.id)" class="btn btn-primary btn-sm">Edit</a>
+		<a href="@routes.BookController.list()" class="btn btn-default btn-sm">Cancel</a></p>
+	</div>
+}

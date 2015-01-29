@@ -1,0 +1,22 @@
+@* edit Template File *@
+@import domain._
+@import helper._
+@(id: String, bookForm: Form[Book])(implicit lang: Lang)
+@implicitFieldConstructor = @{ FieldConstructor(myFieldConstructorTemplate.f) }
+@main(Messages("book.form")) {
+	<h2>
+		@tags.barcode(id)
+		<h2>@Messages("book.form")</h2>
+	</h2>
+	@helper.form(action = routes.BookController.update()) {
+		<fieldset>
+			@helper.inputText(bookForm("user.user"), '_label -> "User", 'class -> "form-control")
+			@helper.textarea(bookForm("description.description"), '_label -> "Description", 'class -> "form-control")
+			@hidden(bookForm("id.id"))
+			@hidden(bookForm("createdAt"))
+		</fieldset>
+		<p><input type="submit" class="btn btn-primary btn-sm" value='@Messages("book.new.update")'> 
+		<a href="@routes.BookController.delete(id)" class="btn btn-primary btn-sm">Delete</a>
+		<a href="@routes.BookController.list()" class="btn btn-default btn-sm">Cancel</a></p>
+	}
+}

@@ -1,0 +1,20 @@
+application.name = Book catalog
+
+ean =EAN
+user = User
+publishedat = Published On
+description = Description
+book.details =Book: {0}
+
+book.add = Add book
+book.form = Update book
+book.new = (new)
+book.new.command = New
+book.list.navigation = Book
+
+book.new.submit = Add
+book.new.update = Update
+book.new.delete = Delete
+book.new.success = Successfully added book {0}.
+validation.errors = Please correct the errors in the form.
+validation.ean.duplicate=A book with this EAN code already exists

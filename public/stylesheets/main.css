@@ -1,0 +1,48 @@
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+	padding-top: 50px;
+}
+
+div.screenshot {
+	background-color: #D0E7EF;
+}
+
+.screenshot > .container {
+	padding: 20px;
+}
+
+.barcode {
+	float: right;
+	margin-bottom: 10px;
+	border: 4px solid white;
+} 
+
+.debug {
+	float: right;
+}
+
+.topRight {
+    position: absolute;
+    right: 20px;
+    top: 70px;
+}
+.top-scroll .fa{
+	font-size:35px !important;
+	
+}
+
+footer .container{
+	margin-top:10px;
+}
+@media (max-width: 720px) {
+	
+	.navbar-brand {
+font-size: 14px !important;
+
+}
+	
+}
