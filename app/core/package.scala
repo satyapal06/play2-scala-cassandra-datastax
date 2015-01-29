@@ -1,7 +1,7 @@
 package object core {
 
   private[core] object Keyspaces {
-    val akkaCassandra = "akkacassandra"
+    val akkaCassandra = "datastaxcassandra"
   }
 
   private[core] object ColumnFamilies {
