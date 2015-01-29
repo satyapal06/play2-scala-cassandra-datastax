@@ -1,8 +1,7 @@
 Implementing asynchronous queries with the Java driver using ScalaPlay framework, bound results in immutable Scala collections and pass to Play controller in reactive model.
-Datastax(Asynchronous queries with the Java driver)
+[Datastax(Asynchronous queries with the Java driver)](http://www.datastax.com/dev/blog/java-driver-async-queries)
 ===================================================================================================================
 * Building Reactive Play application with reactive cassandra driver
-
 -----------------------------------------------------------------------
 ###Get this application on your computer :-
 -----------------------------------------------------------------------
@@ -35,7 +34,8 @@ Datastax(Asynchronous queries with the Java driver)
 -----------------------------------------------------------------------
 ###References :-
 -----------------------------------------------------------------------
-* Play Framework 2.3.0 :- http://www.playframework.com/documentation/2.3.0/ScalaAnorm
-* Bootstrap 3.1.1 :- http://getbootstrap.com/css/
-* Bootswatch :- http://bootswatch.com/yeti/
-* WebJars :- http://www.webjars.org/
+* [Asynchronous queries with the Java driver](http://www.datastax.com/dev/blog/java-driver-async-queries)
+* [Play Framework 2.3.0](http://www.playframework.com/documentation/2.3.0)
+* [Bootstrap 3.1.1](http://getbootstrap.com/css/)
+* [Bootswatch](http://bootswatch.com/yeti/)
+* [WebJars](http://www.webjars.org/)
